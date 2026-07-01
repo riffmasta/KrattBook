@@ -1,62 +1,57 @@
-<div align="center">
-    <h1><b>Docmost</b></h1>
-    <p>
-        Open-source collaborative wiki and documentation software.
-        <br />
-        <a href="https://docmost.com"><strong>Website</strong></a> | 
-        <a href="https://docmost.com/docs"><strong>Documentation</strong></a> |
-        <a href="https://twitter.com/DocmostHQ"><strong>Twitter / X</strong></a>
-    </p>
-</div>
-<br />
+# KrattBook
 
-## Getting started
+KrattBook is a personal fork of [Docmost](https://docmost.com), tailored for a self-hosted knowledge base, notes, and documentation workflow.
 
-To get started with Docmost, please refer to our [documentation](https://docmost.com/docs) or try our [cloud version](https://docmost.com/pricing) .
+## Status
+
+This fork is being adjusted for personal use. The first customization pass removes visible Docmost product branding from the app shell, browser metadata, public-share footer, email defaults, and local Docker setup.
 
 ## Features
 
-- Real-time collaboration
-- Diagrams (Draw.io, Excalidraw and Mermaid)
-- Spaces
-- Permissions management
-- Groups
-- Comments
-- Page history
+- Real-time collaborative pages
+- Spaces and permissions
+- Comments and page history
 - Search
 - File attachments
-- Embeds (Airtable, Loom, Miro and more)
-- Translations (10+ languages)
+- Embeds
+- Diagrams with Draw.io, Excalidraw, and Mermaid
+- Multi-language UI inherited from upstream
 
-### Screenshots
+## Development
 
-<p align="center">
-<img alt="home" src="https://docmost.com/screenshots/home.png" width="70%">
-<img alt="editor" src="https://docmost.com/screenshots/editor.png" width="70%">
-</p>
+Install dependencies:
 
-### License
-Docmost core is licensed under the open-source AGPL 3.0 license.  
-Enterprise features are available under an enterprise license (Enterprise Edition).  
+```bash
+pnpm install
+```
 
-All files in the following directories are licensed under the Docmost Enterprise license defined in `packages/ee/License`.
-  - apps/server/src/ee
-  - apps/client/src/ee
-  - packages/ee
+Run the client and server in development:
 
-### Contributing
+```bash
+pnpm dev
+```
 
-See the [development documentation](https://docmost.com/docs/self-hosting/development)
+Build everything:
 
-## Thanks
-Special thanks to;
+```bash
+pnpm build
+```
 
-<img width="100" alt="Crowdin" src="https://github.com/user-attachments/assets/a6c3d352-e41b-448d-b6cd-3fbca3109f07" />
+## Docker
 
-[Crowdin](https://crowdin.com/) for providing access to their localization platform.
+The included Compose file builds this fork locally:
 
+```bash
+docker compose up --build
+```
 
-<img width="48" alt="Algolia-mark-square-white" src="https://github.com/user-attachments/assets/6ccad04a-9589-4965-b6a1-d5cb1f4f9e94" />
+## Upstream And License
 
-[Algolia](https://www.algolia.com/) for providing full-text search to the docs.
+KrattBook is based on Docmost. The upstream open-source core is licensed under AGPL 3.0.
 
+Enterprise directories remain subject to the upstream Docmost Enterprise license:
+
+- `apps/server/src/ee`
+- `apps/client/src/ee`
+- `packages/ee`
+- `packages/base-formula`

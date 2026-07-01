@@ -1,6 +1,6 @@
 {
-  "name": "docmost",
-  "homepage": "https://docmost.com",
+  "name": "krattbook",
+  "homepage": "https://github.com/riffmasta/KrattBook",
   "version": "0.95.0",
   "private": true,
   "scripts": {

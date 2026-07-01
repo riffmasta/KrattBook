@@ -1,6 +1,7 @@
 services:
   docmost:
-    image: docmost/docmost:latest
+    build: .
+    image: krattbook:latest
     depends_on:
       - db
       - redis

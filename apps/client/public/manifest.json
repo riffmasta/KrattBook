@@ -1,6 +1,6 @@
 {
-  "name": "Docmost",
-  "short_name": "Docmost",
+  "name": "KrattBook",
+  "short_name": "KrattBook",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#222",
