@@ -37,6 +37,8 @@ Build everything:
 pnpm build
 ```
 
+For a fuller maintainer map of the current app, see [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
 ## Docker
 
 The included Compose file builds this fork locally:
